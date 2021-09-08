@@ -1,0 +1,30 @@
+@value blue-grey-200 from '../../../colors/colors.css';
+
+.SortingHeader {
+  user-select: none;
+  z-index: 1;
+}
+
+.SortingHeaderSortIcon {
+  font-size: 15px;
+  margin-right: 2px;
+}
+
+.SortingHeaderCell {
+  display: flex;
+  align-items: center;
+
+  .rightAlign & {
+    justify-content: flex-end;
+  }
+}
+
+.sortable {
+  cursor: pointer;
+  transition: background 0.15s, border 0.15s;
+
+  &:hover {
+    background: blue-grey-200;
+    border-color: blue-grey-200;
+  }
+}

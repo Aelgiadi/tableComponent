@@ -1,0 +1,37 @@
+@value d1, d2, d3, d4, d5 from '../../../dimensions/dimensions.css';
+@value f1, f2, f3, f4, f5 from '../../../dimensions/dimensions.css';
+@value background from '../../../colors/colors.css';
+@value blue-grey-900 from '../../../colors/colors.css';
+
+.FilterableTable {
+}
+
+.Header {
+  align-items: center;
+  display: flex;
+  gap: d3;
+  margin-bottom: d2;
+  min-width: 600px;
+  max-width: 95vw;
+  padding: 0 d1;
+}
+
+.Title,
+.Actions {
+  flex: none;
+  &:empty {
+    display: none;
+  }
+}
+
+.Filters {
+  flex: 1;
+}
+
+.Title {
+  color: blue-grey-900;
+  font-size: f4;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: d1;
+}

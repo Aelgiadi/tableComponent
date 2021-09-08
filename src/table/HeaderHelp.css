@@ -1,0 +1,47 @@
+@value blue-grey-900 from '../../colors/colors.css';
+
+.HeaderHelp {
+  background: white;
+  border: 1px solid grey;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 40%);
+  color: blue-grey-900;
+  font-size: 1.05em;
+  font-weight: normal;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  transform: translateY(-6px);
+  transition: all 0.15s;
+  white-space: normal;
+  width: 400px;
+
+  &.HeaderHelp--right {
+    left: auto;
+    right: 0;
+  }
+
+  i:hover + & {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.5s;
+  }
+}
+
+.HeaderHelpIcon {
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.HeaderHelpBackgroundIcon {
+  font-size: 80px;
+  opacity: 0.15;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  transform: rotate(10deg);
+}

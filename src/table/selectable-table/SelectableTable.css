@@ -1,0 +1,19 @@
+@value d1, d2, d3, d4, d5, d6, d7 from '../../../dimensions/dimensions.css';
+@value BannerAddition from '../tableStyles.css';
+@value blue-grey-200 from '../../../colors/colors.css';
+
+.Selected {
+  border: 1px solid blue-grey-200;
+  border-radius: 100px;
+  order: -1;
+  padding: 2px d2;
+}
+
+.Selected + .BannerAddition {
+  margin-left: 0;
+}
+
+tbody .SelectColumn input {
+  position: relative;
+  top: 2px;
+}

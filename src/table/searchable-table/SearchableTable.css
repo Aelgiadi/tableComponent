@@ -1,0 +1,99 @@
+@value d1, d2, d3, d4, d5, d6, d10 from '../../../dimensions/dimensions.css';
+@value primary from '../../../colors/colors.css';
+@value blue-grey-100 from '../../../colors/colors.css';
+@value blue-grey-150 from '../../../colors/colors.css';
+@value blue-grey-200 from '../../../colors/colors.css';
+@value blue-grey-300 from '../../../colors/colors.css';
+@value blue-grey-900 from '../../../colors/colors.css';
+@value BannerAddition from '../tableStyles.css';
+
+.Search {
+  order: 5;
+}
+
+.SearchButton {
+  svg {
+    margin-right: d1;
+    transform: scale(0.8);
+  }
+
+  button {
+    all: unset;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    margin: -2px 0;
+    padding: d1 d2 d1 d1;
+    transition: all 0.1s;
+
+    &:hover,
+    &:focus {
+      background: blue-grey-100;
+      outline: none;
+    }
+    &:active {
+      background: blue-grey-200;
+    }
+  }
+}
+
+.SearchInput {
+  position: relative;
+  display: inline-flex;
+
+  input {
+    all: unset;
+    background: white;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid blue-grey-200;
+    border-right: none;
+    flex: none;
+    padding: 2px 4px 2px 26px;
+    width: 145px;
+  }
+
+  svg {
+    height: 16px;
+    left: d1;
+    margin-top: -8px;
+    opacity: 0.8;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+  }
+
+  button {
+    all: unset;
+    background: blue-grey-150;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid blue-grey-300;
+    border-left: none;
+    padding: 0 d2;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+    }
+
+    i {
+      color: inherit;
+      font-size: 18px;
+      margin: 0 d3;
+    }
+  }
+}
+
+.SearchInput--pending button {
+  background: primary;
+  border-color: primary;
+  color: white;
+}
+
+.NoMatches {
+  color: blue-grey-900;
+  font-size: 1.05em;
+  font-weight: 500;
+  max-width: 100vw;
+  padding: d6;
+  text-align: center;
+}
