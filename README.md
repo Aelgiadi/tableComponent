@@ -1,6 +1,6 @@
 # Modular Table Component
 
-In the middle of 2020 I was tasked with creating a table component that is easily digestible and has the ability to be used in it's simplest form _(displaying rows of data)_ as well as handle complex use cases such as grouping, searching, sorting, and paging. By providing column configurations, the table determines how to do each use case. The only required props for the table component are the data set and a collection of columns.
+In the middle of 2020 I was tasked with creating a table component that is easily digestible and has the ability to be used in it's simplest form _(displaying rows of data)_ as well as handle complex use cases such as grouping, searching, sorting, and paging. By providing column configurations, the table determines how to handle each use case. The only required props for the table component are the data set and a collection of columns.
 
 ## Goals
 
