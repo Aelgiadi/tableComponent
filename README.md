@@ -50,3 +50,7 @@ type TColumn<T, U: ?TSortable = *> = {
   as?: (CellProps<T>) => React$Node,
 };
 ```
+
+## Examples
+<img width="1343" alt="Screen Shot 2021-09-08 at 9 07 41 AM" src="https://user-images.githubusercontent.com/12503360/132549300-efb4c5b3-fa06-44a2-8ba4-243c00a935ce.png">
+<img width="1250" alt="Screen Shot 2021-09-08 at 9 10 07 AM" src="https://user-images.githubusercontent.com/12503360/132549314-9c85b56f-051f-49f8-b512-cda6e8601584.png">
